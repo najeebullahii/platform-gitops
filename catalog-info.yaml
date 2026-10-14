@@ -1,0 +1,20 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: platform-gitops
+  description: Resource requests watched by Argo CD. A commit here is a request for cloud resources.
+  annotations:
+    github.com/project-slug: najeebullahii/platform-gitops
+spec:
+  type: service
+  lifecycle: experimental
+  owner: user:default/najeebullahii
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: najeebullahii
+spec:
+  profile:
+    displayName: Najib Ishiyaku Njidda
+  memberOf: []
